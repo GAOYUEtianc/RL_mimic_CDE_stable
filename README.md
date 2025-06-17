@@ -27,13 +27,20 @@ with [repo](https://github.com/MLforHealth/rl_representations/tree/main).
 ## 🔧 Project Structure
 
 RL_mimic_CDE_stable/
+
 |── configs/ # Experiment and model configuration files
+
 |── scripts/ # Training and evaluation scripts
+
 |── slurm_scripts/ # SLURM job submission templates (for HPC)
+
 |── environment.yml # Conda environment file
+
 |── requirements.txt # Python dependencies
+
 |── README.md
-|── process_mimic_data
+
+|── process_mimic_data # preprocess MIMIC-III data
 
 ---
 
@@ -58,7 +65,7 @@ pip install -r requirements.txt
 
 ### 1️⃣ Data Processing
 
-The **MIMIC-III v1.4** ICU dataset was used to extract a cohort of septic patients based on Sepsis-3 criteria. The data extraction and cohort definition process builds on the open-source pipeline from [microsoft/mimic_sepsis](https://github.com/microsoft/mimic_sepsis/tree/main), with the following key modifications:
+The [**MIMIC-III v1.4** ICU dataset](https://physionet.org/content/mimiciii/1.4/) (Johnson, A., Pollard, T., & Mark, R. (2016). MIMIC-III Clinical Database (version 1.4). PhysioNet. RRID:SCR_007345. https://doi.org/10.13026/C2XW26) was used to extract a cohort of septic patients based on Sepsis-3 criteria. The data extraction and cohort definition process builds on the open-source pipeline from [microsoft/mimic_sepsis](https://github.com/microsoft/mimic_sepsis/tree/main), with the following key modifications:
 
 - ✅ **Google BigQuery integration**: We replaced the original Postgres-based data access with queries using **Google Cloud BigQuery**, making it easier to use cloud-hosted MIMIC datasets.
 - ✅ **Bug fixes and minor revisions**: Several small issues in the original scripts were fixed to ensure compatibility and clean execution across environments.
