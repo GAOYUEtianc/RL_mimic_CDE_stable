@@ -1,0 +1,14 @@
+num_nodes: 128
+hidden_size: 128 # num_nodes should be equal to hidden_size, it's the same but used in different places with different names
+
+learning_rate: 0.0001
+storage_folder: 'data/behaviour_clone/'
+batch_size: 128
+num_epochs: 2000
+weight_decay: 0
+optim_type: 'sgd'
+
+
+# where replay buffers should be
+train_buffer: 'data/replay_buffer_without_demo/train_buffer'
+val_buffer: 'data/replay_buffer_without_demo/val_buffer'

@@ -1,0 +1,12 @@
+/venv
+.env
+*.pth
+*.ipynb_checkpoints
+.DS_Store
+logs/
+checkpoints/
+*.pt
+
+data/*
+test/*
+*.ipynb
