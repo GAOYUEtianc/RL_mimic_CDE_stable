@@ -1,11 +1,12 @@
 
 # RL_mimic_CDE_stable
 
-This repository provides the implementation for my paper **"Stable Representation Learning for Offline RL with Controlled Differential Equations in ICU Time Series"**, accepted to **IJCAI 2025 (AI4TS Workshop)**.
+This repository provides the implementation for the paper **"Stable Representation Learning for Offline RL with Controlled Differential Equations in ICU Time Series"**, accepted to **IJCAI 2025 (AI4TS Workshop)**.
 
 > 📄 [Paper link – coming soon]
 
-A stable training framework was proposed for learning clinically meaningful state representations from irregular ICU time series using Neural Controlled Differential Equations (CDEs), and demonstrate improved offline reinforcement learning performance on the MIMIC-III sepsis treatment cohort.
+A stable training framework 
+**with early stopping mechanism and multiple stabilization techniques** was proposed for learning clinically meaningful state representations from irregular ICU time series using Neural Controlled Differential Equations (CDEs), and demonstrate improved offline reinforcement learning performance on the MIMIC-III sepsis treatment cohort.
 
 ---
 ## 📖 Citation & Acknowledgments
@@ -23,6 +24,8 @@ This repository builds upon prior work from:
 }
 ```
 with [repo](https://github.com/MLforHealth/rl_representations/tree/main).
+
+Compared to the prior work, this repo adds multiple stabilization techniques (gradient clipping, stiffness regularization, implicit adam solver) and an early stopping mechanism.
 
 ## 🔧 Project Structure
 
