@@ -2,8 +2,16 @@
 # RL_mimic_CDE_stable
 
 This repository provides the implementation for the paper **"Stable Representation Learning for Offline RL with Controlled Differential Equations in ICU Time Series"**, accepted to **IJCAI 2025 (AI4TS Workshop)**.
-
-> 📄 [Paper link – coming soon]
+If you use this code in your project, please cite 
+> @misc{gao2025stablecdeautoencodersacuity,
+      title={Stable CDE Autoencoders with Acuity Regularization for Offline Reinforcement Learning in Sepsis Treatment}, 
+      author={Yue Gao},
+      year={2025},
+      eprint={2506.15019},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2506.15019}, 
+}
 
 A stable training framework 
 **with early stopping mechanism and multiple stabilization techniques** was proposed for learning clinically meaningful state representations from irregular ICU time series using Neural Controlled Differential Equations (CDEs), and demonstrate improved offline reinforcement learning performance on the MIMIC-III sepsis treatment cohort.
