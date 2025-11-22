@@ -2,7 +2,7 @@
 # RL_mimic_CDE_stable
 
 This repository provides the implementation for the paper **Stable CDE Autoencoders with Acuity Regularization for Offline Reinforcement Learning in Sepsis Treatment** 
-(https://arxiv.org/abs/2506.15019), accepted to **IJCAI 2025 (AI4TS Workshop)**.
+(https://arxiv.org/abs/2506.15019), accepted to **IEEE Transactions on Artificial Intelligence**.
 If you use this code in your project, please cite 
 > @misc{gao2025stablecdeautoencodersacuity,
       title={Stable CDE Autoencoders with Acuity Regularization for Offline Reinforcement Learning in Sepsis Treatment}, 
